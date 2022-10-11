@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRightCircleIcon } from '@heroicons/react/24/solid'
+import { ArrowRightCircleIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
 const QuizTopic = ({quizTopic}) => {
