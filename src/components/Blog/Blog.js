@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mt-[100px] md:mt-0 w-[70%] text-justify mx-auto'>
+        <div className='mt-[100px] md:mt-0 w-[80%] md:w-[70%] text-justify mx-auto'>
             <div className='border-2 border-slate-400 rounded-lg m-4 p-5'>
                 <h1 className='text-3xl font-semibold'><strong>Question-1:</strong> What is the purpose of a react router?</h1>
                 <p className='text-xl'><strong>Answer: </strong> At its heart, React Router is a state container for the current location , or URL. It keeps track of the location and renders different Route's as it changes, and it also gives you tools to update the location using Link's and the history API.</p>

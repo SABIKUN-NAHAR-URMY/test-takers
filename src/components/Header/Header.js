@@ -8,7 +8,7 @@ const Header = () => {
     const[open,setOpen]=useState(false);
     return (
         <nav>
-            <div className='bg-slate-200 flex items-center justify-between h-20'>
+            <div className='bg-slate-200 flex items-center justify-between md:px-28 h-20'>
                 <div className='flex items-center gap-3'>
                     <img className='w-16' src={logo} alt="" />
                     <h1 className='text-2xl font-bold'>Test-Takers</h1>
