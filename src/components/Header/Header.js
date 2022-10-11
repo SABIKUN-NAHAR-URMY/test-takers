@@ -21,7 +21,7 @@ const Header = () => {
                 
                 <ul className={` bg-slate-200 md:flex gap-12 mr-20 text-xl md:static font-semibold absolute ${open? 'top-[69px]' : 'top-[-120px]'}`}>
                     <li><NavLink className={({isActive}) => isActive? ' underline' : undefined} to='/'>Home</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive? 'underline' : undefined} to='/topics'>Topic</NavLink></li>
+                    
                     <li><NavLink className={({isActive}) => isActive? 'underline' : undefined} to='/statistics'>Statistics</NavLink></li>
                     <li><NavLink className={({isActive}) => isActive? 'underline' : undefined} to='/blog'>Blog</NavLink></li>
                 </ul>

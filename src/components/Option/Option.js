@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Option = ({option}) => {
+const Option = ({ option }) => {
     return (
         <div>
-            {option}
+            {
+             option
+            }
         </div>
     );
 };
