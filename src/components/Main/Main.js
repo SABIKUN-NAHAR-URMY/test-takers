@@ -10,7 +10,11 @@ const Main = () => {
     const router = createBrowserRouter([
         {path: '/', element:<Header></Header>, 
         children:[
-            {path: '/', element:<Home></Home>},
+            {path: '/',
+             loader: async() => {
+                return fetch('https://openapi.programming-hero.com/api/quiz');
+             }, 
+             element:<Home></Home>},
             {path: '/home', element:<Home></Home>},
             {path: 'topics', element:<Topics></Topics>},
             {path: 'statistics', element:<Statistics></Statistics>},
