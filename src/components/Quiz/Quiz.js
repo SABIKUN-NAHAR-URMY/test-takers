@@ -7,9 +7,10 @@ const Quiz = () => {
     return (
         <div>
             {
-                quiz.data.questions.map(quizData => <QuizDetails 
+                quiz.data.questions.map((quizData,idx) => <QuizDetails 
                 key={quizData.id}
-                quizData={quizData}></QuizDetails>)
+                quizData={quizData}
+                id={idx}></QuizDetails>)
             }
         </div>
     );
