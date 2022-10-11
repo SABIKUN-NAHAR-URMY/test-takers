@@ -12,7 +12,7 @@ const QuizDetails = ({ quizData, id }) => {
         });
     };
     return (
-        <div className='border-2 border-slate-400 rounded-lg p-10 m-10 mx-auto w-[50%]'>
+        <div className='w-[80%] md:w-[50%] border-2 border-slate-400 rounded-lg p-10 m-10 mx-auto'>
             <div className='flex'>
                 <h2 className='text-xl font-bold'>Quiz-{id}:{question}</h2>
                 <button><EyeIcon onClick={showToastMessage} className='w-6 h-6'></EyeIcon></button>

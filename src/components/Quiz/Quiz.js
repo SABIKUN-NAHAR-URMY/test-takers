@@ -4,7 +4,7 @@ import QuizDetails from '../QuizDetails/QuizDetails';
 const Quiz = () => {
     const quiz = useLoaderData();
     return (
-        <div>
+        <div className='mt-[100px] md:mt-0'>
             <div className='text-2xl font-bold mt-12'>
             {
                 <h1>Quiz of {quiz.data.name}</h1>
