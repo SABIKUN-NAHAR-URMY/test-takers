@@ -3,7 +3,6 @@ import { EyeIcon } from '@heroicons/react/24/solid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const QuizDetails = ({ quizData, id }) => {
     const { question, correctAnswer, options } = quizData;
     const showToastMessage = () => {
@@ -28,9 +27,7 @@ const QuizDetails = ({ quizData, id }) => {
 
                 }
             </div>
-            {
-                <Option correctAnswer={correctAnswer}></Option>
-            }
+            
         </div>
     );
 };
