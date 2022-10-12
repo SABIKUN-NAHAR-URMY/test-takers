@@ -2,7 +2,7 @@ import React from 'react';
 import {toast } from 'react-toastify';
 
 
-const Option = ({ option, correctAnswer }) => {
+const Option = ({ option, correctAnswer, id }) => {
 
     const handelToClickedTrue = () => {
         toast.success('Answer Right!', {
@@ -28,8 +28,8 @@ const Option = ({ option, correctAnswer }) => {
 
     return (
         <div className="p-2">
-            <input onClick={()=>handelCorrect(option)} type="radio" id="option" name="select_option" value="option" />
-            <label className="pl-2" htmlFor="option">{option}</label>
+            <input onClick={()=>handelCorrect(option)} type="radio" id={`option${id}`} name="select_option" value="option" />
+            <label className="pl-2" htmlFor={`option${id}`}>{option}</label>
         </div>
     );
 };

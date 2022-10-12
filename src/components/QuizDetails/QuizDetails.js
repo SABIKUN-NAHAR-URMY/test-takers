@@ -24,6 +24,7 @@ const QuizDetails = ({ quizData, id }) => {
                         key={idx}
                         option={option}
                         correctAnswer={correctAnswer}
+                        id={`${quizData.id}${idx}`}
                     ></Option>)
 
                 }
