@@ -28,6 +28,9 @@ const QuizDetails = ({ quizData, id }) => {
 
                 }
             </div>
+            {
+                <Option correctAnswer={correctAnswer}></Option>
+            }
         </div>
     );
 };
