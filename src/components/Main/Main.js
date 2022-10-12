@@ -6,6 +6,8 @@ import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Quiz from '../Quiz/Quiz';
 import Statistics from '../Statistics/Statistics';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Main = () => {
     const router = createBrowserRouter([
@@ -35,6 +37,7 @@ const Main = () => {
     return (
         <div>
             <RouterProvider router={router}></RouterProvider>
+            <ToastContainer />
         </div>
     );
 };
